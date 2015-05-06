@@ -1,8 +1,13 @@
 def StringScramble(str1,str2):
 
-    if set(str1) == set(str2):
-        return 'true'
-    return'false'
+    ll = (set(str1) & set(str2))
+    # for n in ll:
+    #     if n in str1 or str2:
+    #         print 'f',n
+
+    if len(ll ^ set(str2)) and len(ll ^ set(str1)):
+        return 'false'
+    return 'true'
     
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
