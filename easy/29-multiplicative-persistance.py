@@ -1,5 +1,4 @@
 def MultiplicativePersistence(num):
-
     counter = 0
     ss = num
 
@@ -14,13 +13,14 @@ def MultiplicativePersistence(num):
 
     return counter
 
+
 def mpp(nm):
     nm = map(int, str(nm))
     p = 1
     for n in nm:
         p *= n
     return p
-    
+
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
 print MultiplicativePersistence(raw_input())           

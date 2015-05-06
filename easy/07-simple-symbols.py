@@ -2,20 +2,21 @@ def SimpleSymbols(str):
     li = list(str)
     idx = 0
 
-    while idx+1 < len(li):
+    while idx + 1 < len(li):
         if li[idx] == '+':
             idx += 1
             if li[idx].isalpha():
-                idx +=1
+                idx += 1
                 if li[idx] == '+':
                     return "true"
                 else:
                     return "false"
         elif li[idx].isalpha():
             return "false"
-        idx+=1
+        idx += 1
 
-print SimpleSymbols(raw_input())           
+
+print SimpleSymbols(raw_input())
 """
 Have the function SimpleSymbols(str) take the str parameter
 being passed and determine if it is an acceptable sequence by either returning

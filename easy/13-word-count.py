@@ -1,9 +1,10 @@
 def WordCount(str):
-  o = 1
-  o += str.count(" ")
-  
-  return o
-# keep this function call here  
+    o = 1
+    o += str.count(" ")
+
+    return o
+
+# keep this function call here
 # to see how to enter arguments in Python scroll down
 print WordCount(raw_input())
 """

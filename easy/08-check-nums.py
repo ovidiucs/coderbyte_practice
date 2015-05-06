@@ -1,5 +1,4 @@
-def CheckNums(num1,num2): 
-
+def CheckNums(num1, num2):
     if num2 > num1:
         return 'true'
     elif num1 == num2:
@@ -9,7 +8,7 @@ def CheckNums(num1,num2):
 
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print CheckNums(raw_input())           
+print CheckNums(raw_input())
 
 """    
 Have the function CheckNums(num1,num2)

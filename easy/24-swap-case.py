@@ -7,7 +7,8 @@ def SwapCase(str):
             d.append(letter[1].upper())
 
     return "".join(d)
-# keep this function call here  
+
+# keep this function call here
 # to see how to enter arguments in Python scroll down
 print SwapCase(raw_input())           
 

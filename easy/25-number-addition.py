@@ -9,7 +9,6 @@ def NumberAddition(str):
     except:
         return 0
 
-
     xs = "".join(xc)
 
     for ele in xs:
@@ -18,10 +17,9 @@ def NumberAddition(str):
         else:
             d.append('+')
 
-
     f = "".join(d)
     return eval(f)
-    
+
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
 print NumberAddition(raw_input())           

@@ -1,9 +1,9 @@
 def ArithGeo(arr):
     diff = arr[1] - arr[0]
     div = float(arr[1]) / float(arr[0])
-    for index in range(len(arr)-1):
+    for index in range(len(arr) - 1):
         if not (arr[index + 1] - arr[index] == diff):
-            for index2 in range(len(arr)-1):      
+            for index2 in range(len(arr) - 1):
                 if not float((arr[index2 + 1]) / float(arr[index2]) == div):
                     return -1
             return 'Geometric'
@@ -11,7 +11,7 @@ def ArithGeo(arr):
 
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print ArithGeo(raw_input())           
+print ArithGeo(raw_input())
 """
 Have the function ArithGeo(arr) take the array of numbers stored in arr
 and return the string "Arithmetic" if the sequence follows an arithmetic

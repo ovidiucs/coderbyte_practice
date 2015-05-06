@@ -1,15 +1,15 @@
-def ArrayAdditionI(arr): 
+def ArrayAdditionI(arr):
     targetValue = max(arr)
     arr.remove(targetValue)
     mall = sum(arr)
     if targetValue <= mall:
-       return 'true'
+        return 'true'
     else:
-       return 'false'
+        return 'false'
 
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print ArrayAdditionI(raw_input())           
+print ArrayAdditionI(raw_input())
 """
 Have the function ArrayAdditionI(arr) 
 take the array of numbers stored in arr

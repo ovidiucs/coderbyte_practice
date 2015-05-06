@@ -22,8 +22,8 @@ def DashInsert(str):
             IndexError
 
     return "".join(d)
-    
+
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print DashInsert(raw_input())           
+print DashInsert(raw_input())
 # needs redoing

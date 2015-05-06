@@ -10,14 +10,15 @@ def LetterChanges(str):
                 s = y.upper()
                 ns.append(s)
             else:
-        		ns.append(y)
+                ns.append(y)
         else:
-			ns.append(y)
-            
+            ns.append(y)
+
         xs = ''.join(ns)
-        
-    return xs 
-  
+
+    return xs
+
+
 print LetterChanges(raw_input())
 """
 Have the function LetterChanges(str) take the str parameter being

@@ -1,5 +1,4 @@
 def AdditivePersistence(num):
-
     counter = 0
     ss = num
 
@@ -13,6 +12,7 @@ def AdditivePersistence(num):
         return counter
 
     return counter
+
 
 def mpp(nm):
     nm = map(int, str(nm))

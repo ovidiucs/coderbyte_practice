@@ -1,12 +1,11 @@
-def LongestWord(sen): 
-  si = sen.split()
-  return max(si, key=len)
+def LongestWord(sen):
+    si = sen.split()
+    return max(si, key=len)
 
-    
+
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print LongestWord(raw_input())           
-
+print LongestWord(raw_input())
 
 """
 Have the function LongestWord(sen) take the sen parameter being passed and return the 

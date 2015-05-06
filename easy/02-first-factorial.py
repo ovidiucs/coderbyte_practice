@@ -9,11 +9,11 @@ in the box below to test your code with different arguments.
 
 from math import factorial
 
-def FirstFactorial(num): 
 
-  return factorial(num)
-    
-    
+def FirstFactorial(num):
+    return factorial(num)
+
+
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
 print FirstFactorial(raw_input())           

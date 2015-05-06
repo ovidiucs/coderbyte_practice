@@ -7,14 +7,14 @@ def LetterCountI(str):
         for letter in alp:
             if word.count(letter) > 1:
                 le.append(index)
-    if le == []:
+    if not le:
         return -1
 
     return al[le[0]]
 
 # keep this function call here  
 # to see how to enter arguments in Python scroll down
-print LetterCountI(raw_input())           
+print LetterCountI(raw_input())
 """
 Have the function LetterCountI(str)
 take the str parameter being passed
