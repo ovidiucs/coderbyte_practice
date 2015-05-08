@@ -13,7 +13,7 @@ def ArrayAddition(arr):
     m = max(arr)
     arr.remove(max(arr))
     l = sum(arr)
-    if l % m in arr:
+    if l % m in arr or l == m:
         return "true"
     else:
         return "false"
@@ -24,3 +24,6 @@ def ArrayAddition(arr):
 print ArrayAddition([3,5,-1,8,12])
 print ArrayAddition([4, 6, 23, 10, 1, 3])
 print ArrayAddition([5,7,16,1,20])
+# ha :) missed theese
+print ArrayAddition([10,20,30,40,100])
+print ArrayAddition([31,2,90,50,7])
