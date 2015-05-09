@@ -14,18 +14,21 @@ shifting number. A Caesar Cipher works by shifting each letter in the string N
 
 def CaesarCipher(str, num):
 
-    ax = list("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    ax = list("abcdefghijklmnopqrstuvwxyz")
+    ab = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     s = []
     for i in str:
         if i in ax:
             # s.append(ax.index(i))
-            s.append(ax.index(i) % len(ax))
+            # s.append((ord(i)+num)%100)
+            s.append(ax[(ax.index(i)+num)%len(ax)])
+        elif i in ab:
+            s.append(ab[(ab.index(i)+num)%len(ab)])
         else:
             s.append(i)
-
-    return s
+    return "".join(s)
 
 # keep this function call here
 # to see how to enter arguments in Python scroll down
-print CaesarCipher("zaAZ", -1)
+print CaesarCipher("abc", 4)
 
