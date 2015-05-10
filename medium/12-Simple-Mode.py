@@ -14,12 +14,16 @@ def SimpleMode(arr):
     di = {}
     for i in arr:
         di[i] = di.get(i, 0) + 1
-    j = (di.values())
 
-    print [di.get(i) for i in arr]
+    x =  [di.get(i) for i in arr]
+    if x.count(x[0]) == len(x):
+        return -1
+    else:
+        return arr.pop(x.index(max(x)))
+
         #arr.remove(i)
 
-    #print di.get(2),di.has_key(2), di.keys(), di.values(), di
+    # print di.get(5),di.has_key(2), di.keys(), di.values(), di, x
 
 # print arr.index(v)
 
@@ -27,6 +31,9 @@ def SimpleMode(arr):
 
 # keep this function call here
 # to see how to enter arguments in Python scroll down
-print SimpleMode([5, 5, 2, 2, 2, 1])
+print SimpleMode([5, 10, 10, 6, 5])
+print SimpleMode([5,5,2,2,10])
+print SimpleMode([3,4,1,6])
+print SimpleMode([10, 4, 5, 2, 4])
 # Input = 5,5,2,2,1Output = 5
 # Input = 3,4,1,6,10Output = -1
